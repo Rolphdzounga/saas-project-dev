@@ -1,0 +1,28 @@
+
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  database: saas-project-dev
+  username: rolph
+  password: '*'
+
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: saas-project-dev
+  username: rolph
+  password: '*'
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: saas-project-app_prod
+  username: rolph
+  password: <%= ENV['SAAS-PROJECT-APP_DATABASE_PASSWORD'] %>
+
+test:
+  <<: *default
+  database: saas-project-test
+
+
