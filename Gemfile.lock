@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/rails/activerecord-session_store.git
+  revision: e6380abb39bf1f7c7302cce00abb961af26e9026
+  specs:
+    activerecord-session_store (0.1.2)
+      actionpack (>= 4.0.0, < 5)
+      activerecord (>= 4.0.0, < 5)
+      railties (>= 4.0.0, < 5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -193,6 +202,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    milia (1.2.0)
+      devise (~> 3.4)
+      rails (~> 4.2)
     mime-types (2.99)
     mini_magick (4.3.3)
     mini_portile2 (2.0.0)
@@ -244,6 +256,8 @@ GEM
     rake (10.5.0)
     rdoc (4.2.1)
       json (~> 1.4)
+    recaptcha (1.0.2)
+      json
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
     rest-client (1.8.0)
@@ -299,6 +313,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-session_store!
   byebug
   carrierwave
   coffee-rails (~> 4.1.0)
@@ -308,11 +323,13 @@ DEPENDENCIES
   fog
   jbuilder (~> 2.0)
   jquery-rails
+  milia
   mini_magick
   passenger
   pg
   rails (= 4.2.4)
   rails_12factor
+  recaptcha
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

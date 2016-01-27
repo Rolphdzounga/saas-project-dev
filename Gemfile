@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
+gem 'milia'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'stripe'
@@ -46,3 +47,5 @@ group :production do
 end
 
 ruby '2.2.1'
+gem 'recaptcha', require: 'recaptcha/rails'
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
